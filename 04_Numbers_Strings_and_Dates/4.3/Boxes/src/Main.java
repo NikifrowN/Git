@@ -9,7 +9,7 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Введите кол-во ящиков:");
-        int box = Integer.parseInt(reader.readLine());
+        int box = Integer.parseInt(reader.readLine()); // Вводим с консоли кол-во ящиков
 
         int contPlusOne = (box % 27) != 0 ? 1 : 0;     // Смотрим нужен ли доп.контейнер (делится ли кол-во ящиков на 27 без остатка)
         int cont =  (box / 27) + contPlusOne;          // Считаем кол-во контейнеров
